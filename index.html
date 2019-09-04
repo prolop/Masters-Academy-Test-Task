@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Masters Academy - Test task</title>
+  </head>
+  <body>
+    <h3>Result:</h3>
+    <ol id="result"></ol>
+
+    <script>
+      const fruits = ['Banana', 'Apple', 'Orange', 'Lemon'];
+      const result = document.querySelector('#result');
+
+      for (let fruit of fruits) {
+        if (fruit === 'Apple') {
+          result.insertAdjacentHTML('beforeend', '<li>Only ' + fruit + '</li>');
+        } else {
+          result.insertAdjacentHTML('beforeend', '<li>' + fruit + '</li>');
+        }
+      }
+    </script>
+  </body>
+</html>
